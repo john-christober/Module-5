@@ -24,9 +24,22 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```
+REG NO- 212222060098
+NAME : John christober T
+
+class Person:
+    def __init__(self, name, userid):
+        self.name = name
+        self.userid = userid
+        print(self.userid)
+name=input()
+userid=input()
+s1 = Person(name, userid)
 
 ```
 
 ### OUTPUT
+<img width="342" height="112" alt="image" src="https://github.com/user-attachments/assets/0cc1d882-7c31-442e-ad3b-c9ba9e9f889f" />
 
 ### RESULT
+Thus the Python code to create a class for a person with a parameterized constructor, which will take the name and userid of the person as parameters and print the userid of the person was implemented and executed successfully.
