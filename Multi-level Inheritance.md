@@ -39,10 +39,36 @@ To write a Python program to get the name, age, and ID of a person and display t
 ### PROGRAM
 
 ```
+REG NO 212222060098
+NAME : John christober 
+class Parent:
+   def __init__(self,name):
+     self.name = name
+   def getName(self):
+     return self.name
+class Child(Parent):
+   def __init__(self,name,age):
+     Parent.__init__(self,name)
+     self.age = age
+   def getAge(self):
+     return self.age
+class Grandchild(Child):
+   def __init__(self,name,age,id):
+     Child.__init__(self,name,age)
+     self.id=id
+   def getid(self):
+     return self.id
+name=input()
+age=int(input())
+id=int(input())
+gc = Grandchild(name,age,id)
+print(gc.getName(), gc.getAge(), gc.getid())
 
 
 ```
 
 ### OUTPUT
+<img width="619" height="204" alt="image" src="https://github.com/user-attachments/assets/f7a5bf13-e55c-4929-b6ca-aff38bd7532f" />
 
 ### RESULT
+Thus the Python program to get the name, age, and ID of a person and display them using multilevel inheritance was implemented and executed successfully.
